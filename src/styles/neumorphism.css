@@ -1,0 +1,20 @@
+.neumorph-out {
+    border-radius: 50px;
+    background: #333C43;
+    box-shadow: -20px -20px 33px #282f35,
+        20px 20px 33px #3e4951;
+}
+
+.neumorph-out-alt {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #374048, #2e363c);
+    box-shadow: 20px 20px 26px #282f35,
+        -20px -20px 26px #3e4951;
+}
+
+.neumorph-in {
+    border-radius: 50%;
+    background: #293136;
+    box-shadow: inset 20px 20px 33px #20272b,
+        inset -20px -20px 33px #323b41;
+}
