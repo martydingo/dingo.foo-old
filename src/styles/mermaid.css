@@ -1,0 +1,119 @@
+.label div {
+    padding: 0px 0px;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.subgraph {
+    /* stroke-width: 0.3 !important; */
+}
+
+/* @media (prefers-color-scheme: dark) { */
+    .subgraph {
+        stroke: #293136 !important;
+        stroke-width: 0.5px !important;
+    }
+
+    #mermaid-0 {
+        background-color: transparent !important;
+        stroke-width: 0.5px !important;
+        stroke: #293136 !important;
+    }
+
+    rect[class*="subgraph-lvl-0"] {
+        fill: #4D5960 !important;
+        stroke-width: 0.5px !important;
+    }
+
+    rect[class*="subgraph-lvl-1"] {
+        fill: #434F55 !important;
+        stroke-width: 0.5px !important;
+    }
+
+    rect[class*="subgraph-lvl-2"] {
+        fill: #3A464C !important;
+        stroke-width: 0.5px !important;
+
+    }
+
+    rect[class*="subgraph-lvl-3"] {
+        fill: #333C43 !important;
+        stroke-width: 0.5px !important;
+
+    }
+
+    rect[class*="basic"] {
+        fill: #293136 !important;
+        stroke: #293136 !important;
+        stroke-width: 0.5px !important;
+    }
+
+    rect[class*="Label"] {
+        color: #d3c6aa !important;
+    }
+
+    .edgePath .path {
+        stroke: #5C6A72 !important;
+        /* opacity: 0.6; */
+    }
+
+    .marker {
+        stroke: #5C6A72 !important;
+        fill: #5C6A72 !important;
+        opacity: 1;
+    }
+
+    *[class*="Label"] {
+        /* z-index: 1;
+    position: relative; */
+    }
+/* } */
+/* 
+@media (prefers-color-scheme: light) {
+    .subgraph {
+        stroke: #e5dfc5 !important;
+        stroke-width: 0.5px !important;
+    }
+
+    .edgePath .path {
+        stroke: #5c6a72 !important;
+        opacity: 1;
+    }
+
+    .marker {
+        stroke: #5c6a72 !important;
+        fill: #5c6a72 !important;
+        opacity: 1;
+    }
+
+    #mermaid-0 {
+        background-color: transparent !important;
+    }
+
+    rect[class*="subgraph-lvl-0"] {
+        fill: #d8d3ba !important;
+        stroke-width: 0.5px !important;
+    }
+
+    rect[class*="subgraph-lvl-1"] {
+        fill: #ddd8be !important;
+        stroke-width: 0.5px !important;
+    }
+
+    rect[class*="subgraph-lvl-2"] {
+        fill: #e5dfc5 !important;
+        stroke-width: 0.5px !important;
+    }
+
+    rect[class*="basic"] {
+        fill: #eae4ca !important;
+        stroke-width: 0px !important;
+        stroke: #5c6a72 !important;
+    }
+
+    *[class*="Label"] {
+        color: #5c6a72 !important;
+    }
+
+    
+    
+} */

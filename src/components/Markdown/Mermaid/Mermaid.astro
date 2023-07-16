@@ -1,0 +1,11 @@
+---
+import { renderMermaidDiagram } from "./scripts/renderMermaidDiagram";
+const { markdown, mode, renderer, darkMode } = Astro.props;
+import "../../../styles/mermaid.css";
+---
+
+<div
+    class="not-prose min-w-screen-2xl max-w-screen-lg w-screen -ml-16 md:-ml-24 lg:-ml-32"
+>
+    {renderMermaidDiagram(markdown, mode, renderer, darkMode)}
+</div>

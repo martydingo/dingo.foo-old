@@ -2,12 +2,12 @@ import type { ReactElement } from "react";
 import { HomeIcon, NewspaperIcon, InformationCircleIcon } from '@heroicons/react/24/solid'
 
 export default function NavigationBar({ activePage }: { "activePage": "Home" | "Portfolio" | "Blog" | "About" }): ReactElement {
-    const activeColor = "text-everforest-light-green dark:text-everforest-dark-green"
-    const inactiveColor = ""
-    const disabledColor = "text-everforest-light-background-soft-green dark:text-everforest-dark-background-soft-green"
+    const activeColor = "text-everforest-dark-primary"
+    const inactiveColor = "text-everforest-dark-gray-0"
+    const disabledColor = "text-everforest-dark-background-soft-red"
     let homeIconColor = inactiveColor
     let newsIconColor = inactiveColor
-    let aboutIconColor = inactiveColor
+    let aboutIconColor = disabledColor
     if (activePage === "Home") {
         homeIconColor = activeColor
     }
@@ -22,14 +22,14 @@ export default function NavigationBar({ activePage }: { "activePage": "Home" | "
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start place-content-center">
-                <a className="btn btn-ghost" href="/">
-                    <HomeIcon viewBox="0 0 24 24" className={`w-6 h-6 inline-block ${homeIconColor}`} />
+                <a className={`btn btn-ghost ${homeIconColor}`} href="/">
+                    <HomeIcon viewBox="0 0 24 24" className="w-6 h-6 inline-block" /> Home
                 </a>
-                <a className="btn btn-ghost" href="/blog">
-                    <NewspaperIcon viewBox="0 0 24 24" className={`w-6 h-6 inline-block ${newsIconColor}`} />
+                <a className={`btn btn-ghost ${newsIconColor}`} href="/blog">
+                    <NewspaperIcon viewBox="0 0 24 24" className="w-6 h-6 inline-block" /> Blog
                 </a>
-                <a className="btn btn-ghost" href="/about">
-                    <InformationCircleIcon viewBox="0 0 24 24" className={`w-6 h-6 inline-block ${aboutIconColor}`} />
+                <a className={`btn btn-disabled ${aboutIconColor}`} href="/about">
+                    <InformationCircleIcon viewBox="0 0 24 24" className="w-6 h-6 inline-block disabled" /> About
                 </a>
             </div>
             <div className="navbar-center">

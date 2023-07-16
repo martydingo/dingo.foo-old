@@ -13,28 +13,29 @@ module.exports = {
 			typography: ({ theme }) => ({
 				DEFAULT: {
 					css: {
+						'--tw-prose-headings': theme('colors.everforest.dark.gray.2'),
 						h1: {
-							color: theme("colors.everforest.light.red"),
+							color: theme("colors.everforest.dark.gray.2"),
 						},
 						h2: {
-							color: theme("colors.everforest.light.orange"),
+							color: theme("colors.everforest.dark.orange"),
 						},
 						h3: {
-							color: theme("colors.everforest.light.yellow"),
+							color: theme("colors.everforest.dark.yellow"),
 						},
 						h4: {
-							color: theme("colors.everforest.light.green"),
+							color: theme("colors.everforest.dark.green"),
 						},
 						h5: {
-							color: theme("colors.everforest.light.blue"),
+							color: theme("colors.everforest.dark.blue"),
 						},
 						h6: {
-							color: theme("colors.everforest.light.purple"),
+							color: theme("colors.everforest.dark.purple"),
 						},
-						"--tw-prose-body": theme("colors.everforest.light.primary"),
-						"--tw-prose-quotes": theme("colors.everforest.light.gray.0"),
-						"--tw-prose-code": theme("colors.everforest.light.gray.0"),
-						"--tw-prose-bold": theme("colors.everforest.light.gray.2"),
+						"--tw-prose-body": theme("colors.everforest.dark.primary"),
+						"--tw-prose-quotes": theme("colors.everforest.dark.gray.0"),
+						"--tw-prose-code": theme("colors.everforest.dark.gray.0"),
+						"--tw-prose-bold": theme("colors.everforest.dark.gray.2"),
 					},
 				},
 				invert: {
@@ -85,6 +86,19 @@ module.exports = {
 				"base-200": "#3A464C",
 				"base-300": "#434F55",
 				"base-content": "#D3C6AA",
+			},
+			light: {
+				"primary": "#F57D26",
+				"primary-focus": "#E69875",
+				"secondary": "#DFA000",
+				"secondary-focus": "#DBBC7F",
+				"accent": "#8DA101",
+				"accent-focus": "#A7C080",
+				"neutral": "#DDD8BE",
+				"base-100": "#F3EAD3",
+				"base-200": "#EAE4CA",
+				"base-300": "#E5DFC5",
+				"base-content": "#5C6A72",
 			},
 		}]
 	}
