@@ -9,7 +9,7 @@ export default function OverlayHero(): ReactElement {
                 <div className="max-w-md prose dark:prose-invert">
                     <h1 className="text-left mb-5 text-5xl font-bold dark:text-everforest-dark-aqua text-everforest-light-gray-2">Hi!</h1>
                     <p className="text-left mb-5">
-                        Navigate around to read some of my posts, check out my portfolio, or learn more about me!
+                        Navigate around to read some of my posts, or check out my portfolio!
                     </p>
                 </div>
             </div>

@@ -8,7 +8,7 @@ const blogPosts = await getCollection("blog");
 ---
 
 <Base>
-    <title slot="Head">Home | dingo.foo</title>
+    <title slot="Head">Blog Posts | dingo.foo</title>
     <NavigationBar activePage="Blog" />
     <br />
     <div class="prose mx-auto dark:prose-invert max-w-7xl">
@@ -16,10 +16,15 @@ const blogPosts = await getCollection("blog");
             blogPosts.map((post) => {
                 return (
                     <div>
-                        <h1>{post.data.title}</h1>
-                        <Markdown.Inline of={post.data.description} />
+                        <div>
+                            <h1>{post.data.title}</h1>
+                            <Markdown.Inline of={post.data.description} />
+                            </div>
+                            <div>
                         <a href={`/blog/${post.slug}`}>Read more</a>
                     </div>
+                    </div>
+                      <div class="divider"></div> 
                 );
             })
         }

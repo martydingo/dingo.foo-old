@@ -14,24 +14,24 @@ module.exports = {
 				DEFAULT: {
 					css: {
 						'--tw-prose-headings': theme('colors.everforest.dark.gray.2'),
-						h1: {
-							color: theme("colors.everforest.dark.gray.2"),
-						},
-						h2: {
-							color: theme("colors.everforest.dark.orange"),
-						},
-						h3: {
-							color: theme("colors.everforest.dark.yellow"),
-						},
-						h4: {
-							color: theme("colors.everforest.dark.green"),
-						},
-						h5: {
-							color: theme("colors.everforest.dark.blue"),
-						},
-						h6: {
-							color: theme("colors.everforest.dark.purple"),
-						},
+						// h1: {
+						// 	color: theme("colors.everforest.dark.gray.2"),
+						// },
+						// h2: {
+						// 	color: theme("colors.everforest.dark.orange"),
+						// },
+						// h3: {
+						// 	color: theme("colors.everforest.dark.yellow"),
+						// },
+						// h4: {
+						// 	color: theme("colors.everforest.dark.green"),
+						// },
+						// h5: {
+						// 	color: theme("colors.everforest.dark.blue"),
+						// },
+						// h6: {
+						// 	color: theme("colors.everforest.dark.purple"),
+						// },
 						"--tw-prose-body": theme("colors.everforest.dark.primary"),
 						"--tw-prose-quotes": theme("colors.everforest.dark.gray.0"),
 						"--tw-prose-code": theme("colors.everforest.dark.gray.0"),
@@ -40,25 +40,25 @@ module.exports = {
 				},
 				invert: {
 					css: {
-						'--tw-prose-headings': theme('colors.everforest.dark.gray.2'),
-						h1: {
-							color: theme("colors.everforest.dark.red"),
-						},
-						h2: {
-							color: theme("colors.everforest.dark.orange"),
-						},
-						h3: {
-							color: theme("colors.everforest.dark.yellow"),
-						},
-						h4: {
-							color: theme("colors.everforest.dark.green"),
-						},
-						h5: {
-							color: theme("colors.everforest.dark.blue"),
-						},
-						h6: {
-							color: theme("colors.everforest.dark.purple"),
-						},
+						'--tw-prose-headings': theme('colors.everforest.dark.gray.0'),
+						// h1: {
+						// 	color: theme("colors.everforest.dark.fadedred"),
+						// },
+						// h2: {
+						// 	color: theme("colors.everforest.dark.orange"),
+						// },
+						// h3: {
+						// 	color: theme("colors.everforest.dark.yellow"),
+						// },
+						// h4: {
+						// 	color: theme("colors.everforest.dark.green"),
+						// },
+						// h5: {
+						// 	color: theme("colors.everforest.dark.blue"),
+						// },
+						// h6: {
+						// 	color: theme("colors.everforest.dark.purple"),
+						// },
 						"--tw-prose-body": theme("colors.everforest.dark.primary"),
 						"--tw-prose-quotes": theme("colors.everforest.dark.gray.0"),
 						"--tw-prose-code": theme("colors.everforest.dark.gray.0"),
