@@ -9,6 +9,8 @@ import md from '@astropub/md'
 import shiki from "shiki";
 const shikiTheme = await shiki.loadTheme("../../../../../src/themes/shiki/everforest-dark.json");
 
+import { visit } from "unist-util-visit";
+
 // https://astro.build/config
 export default defineConfig({
   adapter: node({
@@ -22,6 +24,19 @@ export default defineConfig({
     shikiConfig: {
       theme: shikiTheme
     },
+    rehypePlugins: [
+      () => (tree) => {
+        visit(tree, (node) => {
+          if (node?.type === "element" && node?.tagName === "pre") {
+            const [codeEl] = node.children;
+
+            if (codeEl.tagName !== "code") return;
+
+            node.raw = codeEl.children?.[0].value;
+          }
+        });
+      }
+    ]
   },
   output: "server"
 });
